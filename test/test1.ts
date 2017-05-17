@@ -1,1 +1,1 @@
-const a: string = ""
+// const a: Object

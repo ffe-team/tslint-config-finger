@@ -1,9 +1,9 @@
 {
     "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
+    "extends": [],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        // "ban-types": [true, ["Object", "Use {} instead."], ["String"]]
+    },
     "rulesDirectory": []
 }
