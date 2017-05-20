@@ -17,7 +17,7 @@ class MemberAccessTest {
 
   constructor() {}
 
-  test1() {}
+  test1(): void {}
 
   get testAccess(): string {
     return this._testAccess
@@ -39,13 +39,13 @@ class MemberOrderTest {
 
   constructor() {}
 
-  public static publicStaticFunc() {}
-  protected static protectedStaticFunc() {}
-  private static privateStaticFunc() {}
+  public static publicStaticFunc(): void {}
+  protected static protectedStaticFunc(): void {}
+  private static privateStaticFunc(): void {}
 
-  public publicFunc() {}
-  protected protectedFunc() {}
-  private privateFunc() {}  
+  public publicFunc(): void {}
+  protected protectedFunc(): void {}
+  private privateFunc(): void {}  
 }
  
 // no-any
@@ -70,11 +70,38 @@ import './index.hbs'
 // no-inferrable-types
 const a = 1
 
-function noInferFunc (a: number = 1) {
+function noInferFunc (a: number = 1): number {
   return 1
 }
 
 // no-internal-module
-namespace OuterModel {
+// no-namespace
+declare namespace OuterModel {}
 
+// no-non-null-assertion
+function noNonNullFunc(e:number): void {
+  // e!.toExponential()
 }
+
+// no-reference
+// /// <reference path="./index.d.ts" />
+
+// no-unnecessary-type-assertion
+// const unnecessaryNum = 1
+// const unnecessaryNum2: number = unnecessaryNum as number
+
+// no-var-requires
+// var noVar = require('./testmodel')
+
+// only-arrow-functions
+const arrawFunction = () => {}
+
+// typedef
+let typedefVar
+
+// unified-signatures
+// function unifiedFunc(a: number): void;
+// function unifiedFunc(a: string): string;
+// function unifiedFunc(a: number | string): string {
+//   return `${a}`
+// }
