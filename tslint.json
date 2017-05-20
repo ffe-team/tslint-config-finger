@@ -19,8 +19,12 @@
             true,
             {
                 "order": [
-                    "static-field",
-                    "instance-field",
+                    "public-static-field",
+                    "protected-static-field",
+                    "private-static-field",
+                    "public-instance-field",
+                    "protected-instance-field",
+                    "private-instance-field",
                     "constructor",
                     "public-static-method",
                     "protected-static-method",
@@ -36,7 +40,9 @@
         // https://palantir.github.io/tslint/rules/no-empty-interface/
         "no-empty-interface": true,
         // https://palantir.github.io/tslint/rules/no-import-side-effect/
-        "no-import-side-effect": [true, {"ignore-module": "(\\.html|\\.pug|\\.jade|\\.ejs|\\.hbs|\\.css|\\.less|\\.sass|\\.scss|\\.stylus|\\.styl)$"}]
+        "no-import-side-effect": [true, {"ignore-module": "(\\.html|\\.pug|\\.jade|\\.ejs|\\.hbs|\\.css|\\.less|\\.sass|\\.scss|\\.stylus|\\.styl)$"}],
+        "no-inferrable-types": false,
+        "no-internal-module": true
     },
     "rulesDirectory": []
 }

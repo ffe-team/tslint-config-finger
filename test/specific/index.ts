@@ -29,7 +29,24 @@ class MemberAccessTest {
 }
 
 //member-ordering
-class MemberOrderTest {}
+class MemberOrderTest {
+  public static publicStaticVar: string
+  protected static protectedStaticVar: string
+  private static privateStaticVar: string
+  public publicVar: string
+  protected protectedVar: string
+  private privateVar: string
+
+  constructor() {}
+
+  public static publicStaticFunc() {}
+  protected static protectedStaticFunc() {}
+  private static privateStaticFunc() {}
+
+  public publicFunc() {}
+  protected protectedFunc() {}
+  private privateFunc() {}  
+}
  
 // no-any
 // const noAnyTest: any = 1
@@ -49,3 +66,15 @@ import './index.pug'
 import './index.jade'
 import './index.ejs'
 import './index.hbs'
+
+// no-inferrable-types
+const a = 1
+
+function noInferFunc (a: number = 1) {
+  return 1
+}
+
+// no-internal-module
+namespace OuterModel {
+
+}
