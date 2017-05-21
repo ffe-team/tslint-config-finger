@@ -105,3 +105,26 @@ let typedefVar
 // function unifiedFunc(a: number | string): string {
 //   return `${a}`
 // }
+
+// curly
+let curlyVar: number = 1
+if (true) curlyVar++
+
+// forin
+let forinObject = {a: 1, b: 2}
+
+for (let key in forinObject) {
+
+}
+
+// label-position
+label:
+
+for (let key in forinObject) {
+  if (Object.prototype.hasOwnProperty.call(forinObject, key)) {
+    continue label
+  }
+}
+
+
+

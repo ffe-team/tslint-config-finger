@@ -60,7 +60,20 @@
                 "variable-declaration": "nospace"
             }
         ],
-        "unified-signatures": true
+        "unified-signatures": true,
+        "await-promise": false,
+        "ban": false,
+        "curly": [true, "ignore-same-line"],
+        "forin": false,
+        "import-blacklist": false,
+        "label-position": true,
+        "no-arg": true,
+        "no-bitwise": false,
+        "no-conditional-assignment": true,
+        "no-console": false,
+        "no-construct": true,
+        "no-debugger": false,
+        "no-duplicate-super": true
     },
     "rulesDirectory": []
 }
