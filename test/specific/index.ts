@@ -15,9 +15,9 @@ class MemberAccessTest {
   publicVar: string
   private _testAccess: string
 
-  constructor() {}
+  constructor() { /* empty */ }
 
-  test1(): void {}
+  test1(): void { /* empty */ }
 
   get testAccess(): string {
     return this._testAccess
@@ -37,15 +37,15 @@ class MemberOrderTest {
   protected protectedVar: string
   private privateVar: string
 
-  constructor() {}
+  constructor() { /* empty */ }
 
-  public static publicStaticFunc(): void {}
-  protected static protectedStaticFunc(): void {}
-  private static privateStaticFunc(): void {}
+  public static publicStaticFunc(): void { /* empty */ }
+  protected static protectedStaticFunc(): void { /* empty */ }
+  private static privateStaticFunc(): void { /* empty */ }
 
-  public publicFunc(): void {}
-  protected protectedFunc(): void {}
-  private privateFunc(): void {}  
+  public publicFunc(): void { /* empty */ }
+  protected protectedFunc(): void { /* empty */ }
+  private privateFunc(): void { /* empty */ }  
 }
  
 // no-any
@@ -70,8 +70,8 @@ import './index.hbs'
 // no-inferrable-types
 const a = 1
 
-function noInferFunc (a: number = 1): number {
-  return 1
+function noInferFunc (ab: number = 1): number {
+  return a
 }
 
 // no-internal-module
@@ -94,10 +94,10 @@ function noNonNullFunc(e:number): void {
 // var noVar = require('./testmodel')
 
 // only-arrow-functions
-const arrawFunction = () => {}
+const arrawFunction = () => {/* empty */}
 
 // typedef
-let typedefVar
+const typedefVar = 1
 
 // unified-signatures
 // function unifiedFunc(a: number): void;
@@ -111,16 +111,16 @@ let curlyVar: number = 1
 if (true) curlyVar++
 
 // forin
-let forinObject = {a: 1, b: 2}
+const forinObject = {a: 1, b: 2}
 
-for (let key in forinObject) {
-
+for (const key in forinObject) {
+ // empty
 }
 
 // label-position
 label:
 
-for (let key in forinObject) {
+for (const key in forinObject) {
   if (Object.prototype.hasOwnProperty.call(forinObject, key)) {
     continue label
   }
