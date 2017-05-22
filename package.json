@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-finger",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "FFE's TSLint configuration.",
   "main": "index.js",
   "repository": "https://github.com/ffe-team/tslint-config-finger.git",

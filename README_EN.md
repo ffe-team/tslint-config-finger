@@ -1,16 +1,16 @@
 # tslint-config-finger
 
-[**Finger**](https://finger66.com)内部使用的，用于检测[TypeScript](https://www.typescriptlang.org/)代码
+It is used by [**Finger**](http://finger66.com/static/laptap/join.html)，for checking [TypeScript](https://www.typescriptlang.org/) code.
 
 <span><img src="http://forthebadge.com/images/badges/built-with-love.svg"></span>
 <span><img src="http://forthebadge.com/images/badges/makes-people-smile.svg"></span>
 <span><img src="http://forthebadge.com/images/badges/uses-badges.svg"></span>
 
-English Doc.: [EN](https://github.com/blackcater/tslint-config-finger/blob/master/README_EN.md)
+中文文档: [zh](https://github.com/blackcater/tslint-config-finger/blob/master/README.md)
 
-## 安装
+## Install
 
-### 安装包
+### Install packages
 
 ```shell
 # npm
@@ -23,15 +23,15 @@ yarn add tslint tslint-config-finger --dev
 
 ```
 
-### 初始化工程
+### Init project
 
 ```shell
     tslint --init
 ```
 
-在运行上面的脚本之后，我们将在项目根目录下发现`tslint.json`文件。
+After running above script, we will find a `tslint.json` file in root directory of your project.
 
-你的`tslint.json`可能和下面的一样：
+Your `tslint.json` may be same as below:
 
 ```json
     {
@@ -42,9 +42,9 @@ yarn add tslint tslint-config-finger --dev
     }
 ```
 
-## 基本使用
+## Basic Usage
 
-像下面那样改变`tslint.json`文件：
+Change your `tslint.json` file as below:
 
 ```json
     {
@@ -55,4 +55,4 @@ yarn add tslint tslint-config-finger --dev
     }
 ```
 
-完了，感谢使用!
+That's all, thanks for using!
