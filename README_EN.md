@@ -6,7 +6,7 @@ It is used by [**Finger**](http://finger66.com/static/laptap/join.html)，for ch
 <span><img src="http://forthebadge.com/images/badges/makes-people-smile.svg"></span>
 <span><img src="http://forthebadge.com/images/badges/uses-badges.svg"></span>
 
-中文文档: [zh](https://github.com/blackcater/tslint-config-finger/blob/master/README.md)
+中文文档: [zh](https://github.com/ffe-team/tslint-config-finger/blob/master/README.md)
 
 ## Install
 

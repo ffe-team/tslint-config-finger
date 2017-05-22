@@ -6,7 +6,7 @@
 <span><img src="http://forthebadge.com/images/badges/makes-people-smile.svg"></span>
 <span><img src="http://forthebadge.com/images/badges/uses-badges.svg"></span>
 
-English Doc.: [EN](https://github.com/blackcater/tslint-config-finger/blob/master/README_EN.md)
+English Doc.: [EN](https://github.com/ffe-team/tslint-config-finger/blob/master/README_EN.md)
 
 ## 安装
 
